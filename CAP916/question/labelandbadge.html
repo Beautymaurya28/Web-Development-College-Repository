@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Labels and Badges Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container my-5">
+    <h1 class="text-center">Bootstrap Labels and Badges Example</h1>
+
+    <!-- Labels Section -->
+    <div class="my-4">
+      <h3>Labels</h3>
+      <span class="badge bg-primary">Primary Label</span>
+      <span class="badge bg-secondary">Secondary Label</span>
+      <span class="badge bg-success">Success Label</span>
+      <span class="badge bg-danger">Danger Label</span>
+      <span class="badge bg-warning">Warning Label</span>
+      <span class="badge bg-info">Info Label</span>
+      <span class="badge bg-light">Light Label</span>
+      <span class="badge bg-dark">Dark Label</span>
+    </div>
+
+    <!-- Badges Section -->
+    <div class="my-4">
+      <h3>Badges</h3>
+      <button type="button" class="btn btn-primary">
+        Notifications <span class="badge bg-secondary">4</span>
+      </button>
+
+      <button type="button" class="btn btn-info">
+        Messages <span class="badge bg-light">10</span>
+      </button>
+
+      <button type="button" class="btn btn-danger">
+        Alerts <span class="badge bg-dark">2</span>
+      </button>
+    </div>
+
+    <!-- Nested Badges Example -->
+    <div class="my-4">
+      <h3>Nested Badges</h3>
+      <span class="badge bg-success">
+        New <span class="badge bg-light">25</span>
+      </span>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+<!-- Labels are used to highlight certain items, like categories or tags.
+
+Badges are typically used to display a small piece of information, such as notifications or counts. -->
+<!-- . Labels:
+Labels are created using the .badge class with various color classes (bg-primary, bg-secondary, bg-success, etc.).
+
+These labels are typically used to categorize or tag items (e.g., "Primary Label", "Danger Label", etc.).
+
+2. Badges:
+Badges are often used with buttons to display small pieces of information such as counts or notifications.
+
+They are created by placing a span with the .badge class inside the button. The bg-* classes define the color of the badge (e.g., bg-secondary, bg-light, etc.).
+
+The number inside the badge indicates a notification or count (e.g., 4 for "Notifications", 10 for "Messages").
+
+3. Nested Badges:
+You can also nest badges inside other badges. For example, the "New" badge has a nested "25" badge inside it, which might represent a count for new items.
+
+How It Works:
+Labels will display as small blocks with text and color, often used to represent different categories or statuses.
+
+Badges will display as small notifications inside elements, like buttons, and can show numbers to represent counts or notifications. -->

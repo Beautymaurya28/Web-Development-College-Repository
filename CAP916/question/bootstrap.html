@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Brand/Logo -->
+      <a class="navbar-brand" href="#">My Website</a>
+      
+      <!-- Toggler Button (for mobile view) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container my-5">
+    <h1 class="text-center">Welcome to My Website</h1>
+    <p class="text-center">This is a basic webpage with a responsive navbar using Bootstrap.</p>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
+<!-- Key Features:
+Navbar:
+
+The navbar is created using navbar and navbar-expand-lg classes.
+
+navbar-dark is used for a dark-colored theme, and bg-dark is used to set the background color to dark.
+
+ms-auto is used for right-aligning the navbar links.
+
+Toggler:
+
+The toggler button (hamburger menu) appears on mobile screens and allows users to collapse/expand the navbar links.
+
+Responsive Design:
+
+The navbar will collapse on smaller screens (like mobile) and expand on larger screens (like desktop). The links will be displayed in a vertical stack on mobile and a horizontal row on larger screens.
+
+Active Link:
+
+The active class is applied to the "Home" link, making it highlighted as the current page. -->

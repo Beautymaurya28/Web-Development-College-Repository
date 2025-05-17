@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap JS Plugins Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Container for Page Content -->
+  <div class="container my-5">
+
+    <!-- Page Title -->
+    <header class="text-center mb-5">
+      <h1 class="display-4">Bootstrap JS Plugins Example</h1>
+      <p class="lead text-muted">Examples of Bootstrap JavaScript plugins in action.</p>
+    </header>
+
+    <!-- Dropdown Example -->
+    <section class="mb-5">
+      <h2 class="h2">Dropdown Example</h2>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown Button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Modal Example -->
+    <section class="mb-5">
+      <h2 class="h2">Modal Example</h2>
+      <!-- Button to trigger modal -->
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch Modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This is an example of a modal in Bootstrap.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Example -->
+    <section class="mb-5">
+      <h2 class="h2">Carousel Example</h2>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://via.placeholder.com/800x400?text=First+Slide" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First Slide</h5>
+              <p>Some description for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400?text=Second+Slide" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second Slide</h5>
+              <p>Some description for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400?text=Third+Slide" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third Slide</h5>
+              <p>Some description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tooltip Example -->
+    <section class="mb-5">
+      <h2 class="h2">Tooltip Example</h2>
+      <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+        Hover over me
+      </button>
+    </section>
+
+    <!-- Popover Example -->
+    <section class="mb-5">
+      <h2 class="h2">Popover Example</h2>
+      <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Popover Title" data-bs-content="Some popover content.">
+        Click to toggle popover
+      </button>
+    </section>
+
+    <!-- Alert Example -->
+    <section class="mb-5">
+      <h2 class="h2">Alert Example</h2>
+      <div class="alert alert-success" role="alert">
+        This is a success alert—check it out!
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Initialize Tooltips and Popovers
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+</body>
+</html>
+<!-- Dropdown: A simple dropdown menu triggered by a button.
+
+Modal: A button that launches a modal when clicked.
+
+Carousel: A basic image carousel with indicators and controls.
+
+Tooltip: Hover over a button to display a tooltip on top.
+
+Popover: Click a button to toggle a popover with a title and content.
+
+Alert: A basic success alert message. -->

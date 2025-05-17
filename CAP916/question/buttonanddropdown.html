@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button with Dropdown Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container my-5">
+    <h1 class="text-center">Bootstrap Button with Dropdown</h1>
+
+    <!-- Button with Dropdown -->
+    <div class="d-flex justify-content-center my-4">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Action</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another Action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Button with Dropdown Split -->
+    <div class="d-flex justify-content-center my-4">
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Save</button>
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Save as PDF</a></li>
+          <li><a class="dropdown-item" href="#">Save as Word</a></li>
+          <li><a class="dropdown-item" href="#">Save as Excel</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+<!-- Button with Dropdown:
+The first example uses a regular button paired with a dropdown.
+
+The btn-group class groups the button and the dropdown toggle together.
+
+The dropdown-toggle button triggers the dropdown menu to appear when clicked, and the dropdown items are listed in the dropdown-menu.
+
+The visually-hidden class is used to provide accessibility text for screen readers.
+
+2. Dropdown Items:
+The dropdown items are represented as <li> elements containing <a> tags.
+
+You can add more items as per your requirements.
+
+3. Dropdown Divider:
+The <hr class="dropdown-divider"> adds a visual separator between different groups of items in the dropdown.
+
+4. Split Button with Dropdown:
+The second example shows a split button with a dropdown. The first button in the group performs an action (like "Save"), while the dropdown button offers additional options (like "Save as PDF," "Save as Word," etc.).
+
+This split-button design is very useful for giving users a default action and additional options at the same time -->

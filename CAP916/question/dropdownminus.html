@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Minus Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container my-5">
+
+    <!-- Dropdown Title -->
+    <h1 class="text-center mb-4">Dropdown Minus Example</h1>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Select an Option
+      </button>
+      <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Option 1</a></li>
+        <li><a class="dropdown-item" href="#">Option 2</a></li>
+        <li><a class="dropdown-item" href="#">Option 3</a></li>
+        <li><a class="dropdown-item" href="#">Option 4</a></li>
+      </ul>
+    </div>
+
+    <!-- Display selected options -->
+    <div class="mt-3">
+      <h4>Selected Options:</h4>
+      <ul id="selectedOptions" class="list-group"></ul>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // JavaScript to handle Dropdown Minus functionality
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    const selectedOptions = document.getElementById('selectedOptions');
+
+    dropdownMenu.addEventListener('click', function(event) {
+      const clickedItem = event.target;
+
+      if (clickedItem && clickedItem.classList.contains('dropdown-item')) {
+        // Create a new list item for the selected option
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-group-item');
+        listItem.textContent = clickedItem.textContent;
+
+        // Append to the selected options list
+        selectedOptions.appendChild(listItem);
+
+        // Remove the clicked item from the dropdown menu
+        clickedItem.remove();
+      }
+    });
+  </script>
+
+</body>
+</html>
+<!--  ey Features:
+Dropdown Menu: A standard Bootstrap dropdown with some options.
+
+Dropdown Minus: Once you click on an option from the dropdown, it will be removed from the list and added to the "Selected Options" section.
+
+Selected Options: The selected items will be listed below the dropdown in a list.
+
+How It Works:
+Dropdown: The dropdown has a list of items (Option 1, Option 2, etc.).
+
+Click Event: When the user clicks an option, the selected option is moved to the "Selected Options" section below the dropdown.
+
+Removal: The selected option is then removed from the dropdown list.-->
