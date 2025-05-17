@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+}
+div{
+    border: 2px solid black;
+    height: 100px;
+    width:200px;
+    display: inline-block;
+}
+#container{
+    width: 600px;
+    height:300px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items:flex-start;
+    /* align-content:flex-start; */
+    flex-grow: 1;
+}
+#a{
+    background-color: aquamarine;
+}
+#b{
+    background-color: rgb(52, 9, 34);
+    height: 200px;
+    flex-shrink: 0;
+    
+} 
+#c{
+    background-color: red;
+    height: 75px;
+}
+#d{
+    background-color: rgb(48, 214, 27);
+}
+#e{
+    background-color: blue;
+    
+}

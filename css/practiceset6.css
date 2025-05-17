@@ -1,0 +1,28 @@
+
+ul{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+.outer{
+height: 400px;
+width: 400px;
+background-color: blueviolet;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.inner{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+}
