@@ -1,0 +1,118 @@
+ * {
+     font-family: Georgia, Times, "Times New Roman", serif;
+ }
+
+
+ .quiz,
+ .scores {
+     margin: 50px auto 0 auto;
+     max-width: 400px;
+ }
+
+ #top {
+     color: rgb(101, 7, 124);
+ }
+
+ .containerNew {
+    background-image: url(https://img.freepik.com/free-vector/futuristic-glowing-neon-frame-gaming-wallpaper-with-empty-space_1017-55353.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     height: 620px;
+     width: 100%;
+     transform: translate(-50%, -50%);
+     
+ }
+
+ p {
+    color: #fff;
+     margin: 15px 15px;
+ }
+
+ .landing {
+     text-align: center;
+ }
+
+ .scoresHeader {
+     position: absolute;
+     top: 15px;
+     left: 15px;
+ }
+
+ .timer {
+     position: absolute;
+     top: 15px;
+     right: 15px;
+ }
+
+ button {
+     display: inline-block;
+     margin: 10px;
+     cursor: pointer;
+     color: #010129;
+     background-color: #fef9fc;
+     font-weight: 600;
+     padding: 20px;
+     border-radius: 20px;
+ }
+
+ button:hover {
+     background-color: #0beb1a;
+     transition: 1s;
+ }
+
+ .options button {
+     display: block;
+ }
+
+ input[type="text"] {
+     font-size: 100%;
+ }
+
+ .hide {
+     display: none;
+ }
+
+ .feedback {
+     font-style: bold;
+     font-size: 120%;
+     margin-top: 20px;
+     padding-top: 15px;
+     color: #fff;
+     border-top: 2px solid #4B0082;
+ }
+
+ ol {
+     padding-left: 15px;
+     max-height: 600px;
+     overflow: auto;
+ }
+
+ li {
+     padding: 5px;
+     list-style: decimal inside none;
+ }
+
+ li:nth-child(odd) {
+     background-color: #dfdae7;
+ }
+
+ @media screen and (max-width: 768px) {
+     .containerNew {
+         width: 80%;
+     }
+ }
+
+ @media screen and (max-width: 575px) {
+     .containerNew {
+         width: 90%;
+     }
+
+     .quiz,
+     .scores {
+         max-width: 90%;
+     }
+ }

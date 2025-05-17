@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color:rgb(17,104,217);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="Reset"] {
+            background-color: rgb(17, 104, 217);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="Reset"]:hover{
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>made by beauty</h1>
+    <form action="/submit-application" method="POST" enctype="multipart/form-data">
+        <h2>Job Application Form</h2>
+        
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="enter your full name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="enter you correct email address">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your correct phone number">
+
+        <label for="position">Position Applying For:</label>
+        <input type="text" id="position" name="position" placeholder="enter position">
+
+        <label for="experience">Years of Experience:</label>
+        <select id="experience" name="experience" required>
+            <option value="0-1">0-1 Years</option>
+            <option value="1-3">1-3 Years</option>
+            <option value="3-5">3-5 Years</option>
+            <option value="5+">5+ Years</option>
+        </select>
+
+        <label for="resume">Upload Your Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+        <label for="coverLetter">Cover Letter (optional):</label>
+        <textarea id="coverLetter" name="coverLetter" rows="5"></textarea>
+
+        <input type="submit" value="Submit Application">
+        <input type="Reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+    <title>Animation Example</title>
+</head>
+
+<body>
+    <div></div>
+    <br />
+    <button id="animate">Animate Me</button>
+    <script type="text/javascript">
+        $("#animate").click(function () {
+            $("div").animate({
+                width: "200px",
+                height: "200px",
+                borderRadius: "50%",
+                marginLeft: "210px",
+                marginTop: "70px"
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

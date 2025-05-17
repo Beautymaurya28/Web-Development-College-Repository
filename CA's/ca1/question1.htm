@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu </title>
+</head>
+<body>
+	<style>
+		section{
+			background-color: #fff;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-left: 300px;
+			border: 2px solid #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50%;
+			color: black;
+			border-radius: 20px;
+		}
+		.reservation{
+			color:black;
+			font-weight: 600;
+		}
+		body{
+			background-color: black;
+		}
+		table {
+			background-color: white;
+			border-collapse: collapse;
+			width: 80%;
+			margin: 40px auto;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		th {
+			background-color: #f0f0f0;
+		}
+		
+		img {
+			width: 100px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		#menu{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 70px;
+			color:white;
+			font-weight: 800;
+			height: 400px;
+			background-image: url(https://static.dezeen.com/uploads/2024/03/coqodaq_rockwell-group_dezeen_2364_col_11-852x560.jpg)
+		}
+		h1{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+	
+		}
+		p{
+			font-size: 20px;
+			color: #fff;
+		}
+		form{
+			color: #fff;
+		}
+		textarea{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 300px;
+			margin-top: 20px;
+			height: 150px;
+			width: 50%;
+			border-radius: 10px;
+			box-shadow: #f0f0f0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Your Most welcome in our Restru! </h1>
+	<h1 id="menu" style="text-align: center;">Chicken Dinner Menu</h1>
+	<li><p>At Chicken Dinner, we're passionate about serving up delicious, finger-lickin' good chicken dishes that bring people together. Our story began with a simple idea: to create a cozy, welcoming spot where friends and family can gather to enjoy mouth-watering chicken favorites. From classic comfort food to innovative twists, our menu is crafted to satisfy your cravings.</p></li>
+	<table>
+		<tr>
+			<th>Item</th>
+			<th>Image</th>
+			<th>Description</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td>Crispy Fried Chicken</td>
+			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxgGhmdVXkCLBAkWUhhhSGbll06el_k9tV9Q&s" alt="Chicken Parmesan" alt="Crispy Fried Chicken"></td>
+			<td>Juicy chicken breast coated in our signature crispy breading, served with mashed potatoes and gravy.</td>
+			<td>120</td>
+		</tr>
+		<tr>
+			<td>Grilled Chicken Fajitas</td>
+			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvhAEhhLIZrEIirU4ScnmpNShYXbp4cJbUwg&s" alt="Grilled Chicken Fajitas"></td>
+			<td>Sliced grilled chicken, sautéed onions and bell peppers, served with warm flour tortillas.</td>
+			<td>299</td>
+		</tr>
+		<tr>
+			<td>Chicken Parmesan</td>
+			<td><img src="https://hips.hearstapps.com/hmg-prod/images/chicken-parmesan-secondary-644041992a1d4.jpg"></td>
+			<td>Breaded and fried chicken topped with marinara sauce and melted mozzarella cheese, served with spaghetti.</td>
+			<td>320</td>
+		</tr>
+		<tr>
+			<td>Chicken biryani</td>
+			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwaF6-1Auf1DuOXo9FhalxTrx1j-BnkoOu4A&s" alt="Chicken Tenders Basket"></td>
+			<td>Chicken biryani is a popular dish of long-grain rice, meat, and vegetables that originated in Persia and has been a staple in India for centuries</td>
+			<td>180</td>
+		</tr>
+		<tr>
+			<td>Chicken Tikkaa</td>
+			<td><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/chicken-tikka-kebab.jpg" alt="Chicken Quesadilla"></td>
+			<td>Chicken tikka is a dish of small pieces of chicken that originated in the Indian subcontinent and is popular in many countries.</td>
+			<td>200</td>
+		</tr>
+	</table>
+	<h1>Reservation Form:</h1>
+	<section>
+		<form class=" reservation"action="reservation">
+			<label for="name">Name:</label>
+			<input type="name"><br><br>
+			<label for="email">Email:</label>
+			<input type="Email" id="email" name="email">
+			<br><br>
+             <label for="phone">Phone number:</label>
+			 <input type="text"><br><br>
+			 <label for="appt">Select a time:</label>
+             <input type="time" id="appt" name="appt">
+			</form>
+	</section>
+	<textarea name="feedback" id="feedback" rows="10" cols="20">give me your feed back:
+	</textarea>
+	<h1>Thank your for visiting!</h1>
+</body>
+</html>

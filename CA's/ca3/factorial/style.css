@@ -1,0 +1,86 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-mathematics-books-green-simplicity-image_782466.jpg);
+  background-size: cover;
+}
+
+.calculator-container {
+  text-align: center;
+  padding: 40px;
+  border: 2px solid rgb(5, 111, 130) ;
+  box-shadow: #004d40;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 24px;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #00796b;
+  font-size: 18px;
+  color: #00796b;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #004d40;
+  outline: none;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+#resultText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #004d40;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.show-result {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.hide-result {
+  opacity: 0;
+  transform: scale(0.9);
+}

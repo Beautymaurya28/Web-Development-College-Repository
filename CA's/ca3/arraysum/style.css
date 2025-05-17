@@ -1,0 +1,41 @@
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-mathematics-books-green-simplicity-image_782466.jpg);
+      background-size: cover;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      background:rgb(1, 1, 43);
+      width: 300px;
+      color: #fff;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #09b38b;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #c9dc19;
+      color: black;
+    }
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Job Application Form</h2>
+        <form id="jobForm" action="/submit" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="position">Position Applied For:</label><br>
+            <input type="text" id="position" name="position" required><br><br>
+
+            <label for="qualifications">Qualifications:</label><br>
+            <textarea id="qualifications" name="qualifications" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="work_type">Preferred Work Type:</label><br>
+            <input type="radio" id="full_time" name="work_type" value="Full-time" required>
+            <label for="full_time">Full-time</label>
+            <input type="radio" id="part_time" name="work_type" value="Part-time" required>
+            <label for="part_time">Part-time</label><br><br>
+
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+            <div id="errorMessages" class="error"></div><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <script href="form.js"></script>
+</body>
+</html>
