@@ -1,38 +1,32 @@
 # Web Development – College Repository
 
-This repository contains all the web development coursework, practice files, and mini-projects completed during college. It includes core concepts of HTML, CSS, Bootstrap, and JavaScript, along with framework-based assignments and hands-on classroom tasks.
+This repository contains all my web development work done during college, including class assignments, practice exercises, and mini-projects. It covers frontend development using HTML, CSS, and JavaScript, as well as backend concepts using Node.js and Express.js.
 
-## Contents
+## Folder Structure
 
-- `bootstrap/`  
-  Practice files and projects created using Bootstrap during classroom sessions.
-
-- `project/`  
-  Web development projects built during the course.
-
-- `practice/`  
-  Daily practice files and hands-on exercises from lectures.
-
-- `ca/`  
-  Continuous assessment-related files and submissions.
-
-- `webdev/`  
-  General web development assignments and notes from the college curriculum.
-
-## Usage
-
-You can explore each folder to view individual topics, components, or project files. All `.html`, `.css`, and `.js` files can be run directly in the browser.
-
-## Purpose
-
-This repository serves as a complete collection of the college web development journey, including lecture tasks, assessments, and hands-on work.
+- `CA's` – Class Assignments and college exercises
+- `CAP916` – Coursework and files related to CAP916 subject
+- `JS Mini Project` – JavaScript-based mini projects
+- `Projects` – Small web projects and practice builds
+- `css` – CSS concept practice and examples
+- `grid` – Grid layout demonstrations and practice
+- `javascript` – JavaScript logic, DOM, and functions practice
+- `node.js` – Backend development examples using Node.js
+- `express` – Express.js-based practice apps and server files
+- `blog express` – Mini blogging site using Express.js
 
 ## How to Run
 
-1. Clone the repository or download the ZIP.
-2. Open any folder and run the `.html` files in a browser.
-3. You can also open the project in a code editor like VS Code and use Live Server for preview.
+1. Clone or download this repository.
+2. Navigate into any folder to explore specific files.
+3. Open `.html` files in your browser or use Live Server in VS Code.
+4. For backend files (`node.js`, `express`, `blog express`):
+   - Open the terminal inside the folder.
+   - Run `npm install` to install dependencies.
+   - Use `node filename.js` or `npm start` to run the app.
 
-## License
+## About
 
-This is a student learning repository. All code and content is shared for educational purposes only.
+This is a personal learning repository that documents my web development journey in college. It includes everything I learned or practiced as part of classroom lectures, assignments, and self-practice.
+
+Feel free to fork this repository or refer to it as a guide if you're beginning your own web development journey.
