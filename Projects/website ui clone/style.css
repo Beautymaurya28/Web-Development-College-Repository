@@ -1,0 +1,275 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    height:15%;
+    width: 100%;
+    background-color:white;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #030b60;
+    padding-left: 10px;
+    position:fixed;
+}
+#fakeheader{
+    height:15%;
+    width: 100%;
+    background-color: #030b60;
+}
+img{
+    margin-left: 20px;
+    height: 47px;
+    width: 68px;
+}
+#more{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    padding-left: 20px;
+}
+#more:hover{
+    color:#0176d3;
+}
+#box2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+#contact-detail{
+    font-weight:lighter;
+    font-size:15px;
+    padding-left:50px ;
+   
+}
+#contact-us:hover{
+    color:hsl(207, 99%, 42%);
+}
+#number{
+padding-right: 20px;
+padding-left: 20px;
+padding-top: 3px;
+}
+#icon-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+   padding-right: 10px;
+   margin-right: 10px;
+   
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    align-items: center;
+    width: 80px;
+    margin-right: 10px;
+}
+#login:hover{
+    color: #0176d3;
+    border-radius: 30px;
+    background-color: #e2ecf5;
+}
+#log{
+    padding-left: 3px;
+}
+#text{
+    padding-left: 20px;
+}
+#text:hover{
+    color: #0176d3;
+}
+#icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:45px;
+    height:45px
+}
+#icon:hover{
+    color: #0176d3;
+    border-radius: 30px;
+    background-color: #e2ecf5;
+}
+#trial{
+   height: 45px;
+   width: 140px;
+   margin-right: -10px;
+   background-color:#2e844a;
+   border: transparent;
+   border-radius: 5px;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: white;
+   font-size: 17px;
+   font-weight:500;
+}
+#trial:hover{
+background-color: #072310;
+}
+#fakeheader{
+    width:100%;
+    height:15%;
+}
+.page1{
+     width: 100%;
+    height: 90%;
+}
+#strip{
+    width:100%;
+    height:8%;
+    background-color: #2b2e58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+#strip p{
+    font-size:17px;
+    font-weight: 700;
+}
+#strip u{
+    padding-left: 15px;
+    font-weight: 500;
+}
+#content{
+    width:100%;
+    height:82%;
+    display: flex;
+
+}
+#content-box1{
+    height:90%;
+    width:50%;
+    background-color:white;
+    margin:20px;
+}
+#content-box1 h1{
+    font-size: 50px;
+    font-weight:700;
+    padding-top: 25px;
+   padding-left:25px;
+   margin-top:15px;
+   
+   color: #030b60;
+}
+#content-box1 p{
+    font-size: 21px;
+    height: 90px;
+    width:442px;
+    padding-left: 30px;
+    padding-top:20px;
+}
+#content-box1 button{
+    height: 52px;
+    width:173px;
+    margin-left:30px;
+    margin-top:50px;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#free-trial{
+    border: transparent;
+    background-color: #0176d3;
+    color: white;
+}
+#demo{
+    background-color: white;
+    border:2px solid #0176d3;
+    color: #0176d3;
+}
+#content-box2{
+    height:90%;
+    width:50%;
+    margin:20px;
+}
+#video{
+    width: 90%;
+    height: 75%;
+    margin-top: 60px;
+    margin-left:20px;
+    margin-right:10px;
+    align-items: center;
+    border-radius:15px;
+    box-sizing: border-box;
+   border:2px solid #030b60;
+   background-color: black;
+
+    
+}
+#tagline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#030b60;
+    height:10%;
+}
+#tagline h1{
+    font-weight: 500;
+}
+.page2{
+    width:100%;
+    height:90%;
+    background-color: #2b2e58;
+}
+#boxes{
+    display:flex;
+    justify-content: space-evenly;
+    height: 853px;
+    width:100%;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#boxes1{
+    background-image: url(https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-1.jpg?resize=768,433);
+    background-position: center;
+    object-fit: cover;
+    height:350px ;
+    width: 250px;
+    background-color: #2e844a;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#boxes2{
+    height:350px ;
+    width: 250px;
+    background-color: #2e844a;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#boxes3{
+    height:350px ;
+    width: 250px;
+    background-color: #2e844a;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#boxes4{
+    height:350px ;
+    width: 250px;
+    background-color: #2e844a;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#learn-more{
+    color: #0176d3;
+    font-size: medium;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 220px;
+}

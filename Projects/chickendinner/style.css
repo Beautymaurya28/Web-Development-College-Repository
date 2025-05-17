@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 0 10px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: red;
+}
+#myimg{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+.banner{
+    height:600px;
+    width: 100%;
+    background-color: aqua;
+}
