@@ -1,4 +1,4 @@
-# Web Development – College Repository
+# Web Development – frontend practice and mini project 
 
 This repository contains all my web development work done during college, including class assignments, practice exercises, and mini-projects. It covers frontend development using HTML, CSS, and JavaScript, as well as backend concepts using Node.js and Express.js.
 
