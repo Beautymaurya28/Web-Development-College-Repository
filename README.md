@@ -5,7 +5,6 @@ This repository contains all my web development work done during college, includ
 ## Folder Structure
 
 - `CA's` – Class Assignments and college exercises
-- `CAP916` – Coursework and files related to CAP916 subject
 - `JS Mini Project` – JavaScript-based mini projects
 - `Projects` – Small web projects and practice builds
 - `css` – CSS concept practice and examples
